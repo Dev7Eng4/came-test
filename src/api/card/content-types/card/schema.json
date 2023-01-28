@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cards",
+  "info": {
+    "singularName": "card",
+    "pluralName": "cards",
+    "displayName": "Card",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "customerEmail": {
+      "type": "email"
+    },
+    "customerName": {
+      "type": "string"
+    },
+    "customerPhoneNumber": {
+      "type": "string",
+      "unique": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Lava Smile",
+        "Lava Gold",
+        "Lava Platinum",
+        "Lava Diamond"
+      ],
+      "required": true,
+      "default": "Lava Smile"
+    },
+    "activeDate": {
+      "type": "date"
+    },
+    "customerAddress": {
+      "type": "string"
+    }
+  }
+}
